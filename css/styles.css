@@ -1,0 +1,18 @@
+body{
+    background-color:white;
+}
+
+h1.welcome-heading{
+    text-align: center;
+    text-shadow: 2px 2px 5px;
+}
+
+.img-landing{
+    opacity: 0.6;
+}
+
+p.Intro-text{
+    text-align: center;
+    font-size:large;
+}
+

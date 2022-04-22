@@ -15,14 +15,16 @@ function setGalleryImage(e){
         //alert(classValue);
         thumbImgs[i].setAttribute("class", classValue);
     }
-
-
     if(!e)
         e = window.event;
-    let src = e.srcElement;
-    let classValue = src.getAttribute("class");
+    let srcElem = e.srcElement;
+    let classValue = srcElem.getAttribute("class");
     classValue += borderValue;
     //alert(classValue);
-    src.setAttribute("class", classValue);
+    srcElem.setAttribute("class", classValue);
     //alert(src.getAttribute("class"));
+    mainImgElement = document.getElementById("id-gallery-selected");
+    mainImageName = srcElem.getAttribute("src");
+    mainImageName = mainImageName.replace(" Thumb","");
+    mainImgElement.setAttribute("src", mainImageName);
 }

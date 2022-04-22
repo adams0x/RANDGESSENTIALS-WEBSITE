@@ -16,3 +16,22 @@ p.Intro-text{
     font-size:large;
 }
 
+
+
+.userDataListing{
+    list-style-type: none;
+}
+
+.userDataListing > li {
+    margin-bottom: 15px;
+}
+
+fieldset{
+    background-color:aliceblue;
+}
+
+
+#userDataDisplay{
+    font-size: large;
+    color: rgb(50, 94, 6);
+}

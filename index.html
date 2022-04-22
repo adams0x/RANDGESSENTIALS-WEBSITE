@@ -41,8 +41,6 @@
     <div class="container-fluid">
 
       <!-- Landing page : Intro and Main Image -->
-      <div>
-        <!-- Landing page image -->
         <div class="row justify-content-center mb-5 border border-1">
           <div class="col img-landing">
             <img src="images/Diffuser Main.JPG" alt="Flower Diffuser Main Pic" class="img-fluid">
@@ -52,12 +50,10 @@
             <p class="Intro-text">It is our passion to fill homes with beautiful scents filled with memories and joy and hand poured with love. We hand pour luxury rapeseed & coconut wax candles and unique fragrance flower diffusers. Take a look around our site, we think you wont be disappointed!</p>
           </div>
         </div>
-      </div>
-
 
       <!-- Picture gallery and thumbnail -->
       <div id="id-gallery" class="border border-1">
-        <div class="row mt-2 justify-content-center">
+        <div id="id-gallery" class="row mt-2 justify-content-center border border-1">
           <div class="col-5">
             <h3 class="display-3">Product Viewer</h3>
             <p>Select a product in the thumbnail below for a detailed view.</p>
@@ -87,9 +83,30 @@
             <img id="id-gallery5" src="images/Pomegranate Flower Diffuser Thumb.jpg" alt="Flower Diffuser Main Pic" class="img-thumbnail" onclick="setGalleryImage()">
           </div>
         </div>
-  
       </div>
 
+
+      <div class="row">
+        <form id="userDataForm" onsubmit="return false">
+          <fieldset>
+              <legend>User Info Entry Form</legend>
+              <ul class="userDataListing">
+                  <li>
+                      <label for="userName">Name:</label>
+                      <input type="text" name="userName" placeholder="Your name"/>
+                  </li>
+                  <li>
+                      <label for="userEmail">Email:</label>
+                      <input type="email" name="userEmail" placeholder="Your email"/>
+                  </li>
+                  <li>
+                      <input type="submit" onclick="displayUserData()"/>
+                  </li>
+              </ul>
+          </fieldset>
+      </form>
+  
+      </div>
     </div>
 
     <!-- JavaScript Bundle with Popper -->

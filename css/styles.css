@@ -1,36 +1,60 @@
+
+/*
+change the overall page background colour
+using the body element
+*/
 body{
-    background-color:white;
+    background-color:linen;
 }
 
+
+/*
+center the welcome heading text and add some shadow effect
+*/
 h1.welcome-heading{
     text-align: center;
     text-shadow: 2px 2px 5px;
 }
 
+
+/*
+alter the opacity of the main landing page image
+for visual appeal
+*/
 .img-landing{
     opacity: 0.6;
 }
 
+
+/*
+css text adjustments
+*/
 p.Intro-text{
     text-align: center;
     font-size:large;
 }
 
+/*
 
-
-.userDataListing{
-    list-style-type: none;
-}
-
+*/
 .userDataListing > li {
     margin-bottom: 15px;
 }
 
+
+
+/*
+target the only fieldset used in contact form to make a nicer colour
+*/
 fieldset{
     background-color:aliceblue;
 }
 
 
+/*
+Target the contct submit response text to set larger text and change
+its colour. Also added som padding to top and bottom to space it out a bit
+*/
 #userDataDisplay{
     font-size: large;
     padding-block: 40px;

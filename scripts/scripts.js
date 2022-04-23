@@ -1,4 +1,11 @@
 
+var form = document.getElementById("userDataForm");
+function handleForm(event) { event.preventDefault(); } 
+form.addEventListener('submit', handleForm);
+
+
+
+
 
 let thumbImgs = [];
 for(i=0; i<6;i++){
@@ -27,4 +34,15 @@ function setGalleryImage(e){
     mainImageName = srcElem.getAttribute("src");
     mainImageName = mainImageName.replace(" Thumb","");
     mainImgElement.setAttribute("src", mainImageName);
+}
+
+
+
+
+function displayUserData(){
+    console.log("displayUserData is called");
+    var userName = document.getElementsByName("userName")[0].value;
+    var userEmail = document.getElementsByName("userEmail")[0].value;
+    document.getElementById("userDataListing").style.display = "none";
+    document.getElementById("userDataDisplay").innerHTML = "Hi there " + userName + ". Thank you for your message. We will be in touch with you (via email "+userEmail+") shortly.";
 }

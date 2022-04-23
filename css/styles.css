@@ -33,5 +33,6 @@ fieldset{
 
 #userDataDisplay{
     font-size: large;
+    padding-block: 40px;
     color: rgb(50, 94, 6);
 }

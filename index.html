@@ -25,7 +25,7 @@
                 <a class="nav-link" href="#id-gallery">Product Viewer</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link2</a>
+                <a class="nav-link" href="#idContactUs">Contact</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Other Stuff</a>
@@ -52,8 +52,8 @@
         </div>
 
       <!-- Picture gallery and thumbnail -->
-      <div id="id-gallery" class="border border-1">
-        <div id="id-gallery" class="row mt-2 justify-content-center border border-1">
+
+        <div id="id-gallery" class="row mt-2 justify-content-center border border-1 snaphere">
           <div class="col-5">
             <h3 class="display-3">Product Viewer</h3>
             <p>Select a product in the thumbnail below for a detailed view.</p>
@@ -83,32 +83,51 @@
             <img id="id-gallery5" src="images/Pomegranate Flower Diffuser Thumb.jpg" alt="Flower Diffuser Main Pic" class="img-thumbnail" onclick="setGalleryImage()">
           </div>
         </div>
-      </div>
 
-
-      <div class="row">
-        <form id="userDataForm" onsubmit="return false">
-          <fieldset>
-              <legend>User Info Entry Form</legend>
-              <ul class="userDataListing">
-                  <li>
-                      <label for="userName">Name:</label>
-                      <input type="text" name="userName" placeholder="Your name"/>
-                  </li>
-                  <li>
-                      <label for="userEmail">Email:</label>
-                      <input type="email" name="userEmail" placeholder="Your email"/>
-                  </li>
-                  <li>
-                      <input type="submit" onclick="displayUserData()"/>
-                  </li>
-              </ul>
-          </fieldset>
-      </form>
+<br>
+<br>
+<br>
+<br>
+      <!-- Contact us-->
+      <div id="idContactUs" class="row snaphere">
+        <div class="col-1 col-md-3"></div>
+        <div class="col">
+          <form id="userDataForm" onsubmit="displayUserData()">
+            <fieldset class="p-3 m-5">
+                <legend class="display-3">Contact Us</legend>
+                <p>Enter your message and we will be in touch !</p>
+                <div id="userDataListing">
+                    <div>
+                        <label class="form-label" for="userName">Name:</label>
+                        <input type="text" class="form-control" name="userName" placeholder="Your name" required/>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label" for="userPhnNum">Phone:</label>
+                      <input type="tel" class="form-control" name="userPhnNum" placeholder="Your number" required/>
+                  </div>
+                  <div class="mb-3">
+                        <label class="form-label" for="userEmail">Email:</label>
+                        <input type="email" class="form-control" name="userEmail" placeholder="Your email" required/>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label" for="userMessage" class="form-label">Your Message</label>
+                      <textarea class="form-control" id="userMessage" rows="3" required></textarea>
+                    </div>
+                  <div class="mb-3">
+                    <button class="btn btn-primary" type="submit">Submit form</button>
+                  </div>
+                </div>
+                <p id="userDataDisplay"></p>
+            </fieldset>
+          </form>
+        </div>
+        <div class="col-1 col-md-3"></div>
   
       </div>
     </div>
-
+    <br>
+    <br>
+    <br>
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src="scripts/scripts.js"></script>
